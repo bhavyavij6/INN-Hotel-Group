@@ -147,8 +147,7 @@ The primary goal is to predict whether a hotel booking will be canceled, based o
 
 ### 4. How do cancellations vary by market segment type and by lead time?
 
-**💡 Answer:** 
-- Here are the key drivers & their relationship with the booking cancellation status.  
+**💡 Answer:** Here are the key drivers & their relationship with the booking cancellation status.  
 
 <details>
 <summary>Click to view full analysis</summary>
@@ -212,8 +211,6 @@ The primary goal is to predict whether a hotel booking will be canceled, based o
 
 ### 5. What is the model accuracy, precision, and recall?
 
-**💡 Answer:**  
-
 <details>
 <summary>Click to view full analysis</summary>
 
@@ -257,64 +254,21 @@ The primary goal is to predict whether a hotel booking will be canceled, based o
 ### 6. What recommendations would you make to the management of the hotel as a data scientist based on your data analysis and predictive model (as related to cancellations)?
 
 **💡 Answer: ** I as a Data Scientist would give the following Recommendations-:
-a) 🎁 Incentivize Early Bookings to Reduce Cancellations (Lead-Time Trouble)
-b) 👨‍👩‍👧 Boost Repeat Bookings with Family-Friendly Perks (Low Repeat Customer Problem)
-c) ✈️ Strengthen Coordination with Travel & Aviation Partners (Market Segment Complication)
-d) 📞 Leverage Offline Bookings to Strengthen Show-Up Rates (Offline Booking Muddle)
-e) 🚦 Implement a Predictive Red-Flag System (Data-Science Solution)
+- a) 🎁 Incentivize Early Bookings to Reduce Cancellations (Lead-Time Trouble)
+- b) 👨‍👩‍👧 Boost Repeat Bookings with Family-Friendly Perks (Low Repeat Customer Problem)
+- c) ✈️ Strengthen Coordination with Travel & Aviation Partners (Market Segment Complication)
+- d) 📞 Leverage Offline Bookings to Strengthen Show-Up Rates (Offline Booking Muddle)
+- e) 🚦 Implement a Predictive Red-Flag System (Data-Science Solution)
 
 <details>
 <summary>Click to view full analysis</summary>
 
-#### BLAA:
+#### Detailed Insights:
 
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <style>
-    body {
-      font-family: 'Segoe UI', sans-serif;
-      background-color: #f9f9ff;
-      color: #333;
-      padding: 40px;
-      max-width: 900px;
-      margin: auto;
-    }
-    h1 {
-      text-align: center;
-      color: #3c3c88;
-      font-size: 2.5rem;
-      margin-bottom: 30px;
-    }
-    .recommendation {
-      background: #ffffff;
-      border-left: 6px solid #3c3c88;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.05);
-      margin-bottom: 30px;
-      padding: 20px 30px;
-      border-radius: 12px;
-    }
-    .recommendation h2 {
-      font-size: 1.3rem;
-      color: #3c3c88;
-      margin-bottom: 10px;
-    }
-    .recommendation p {
-      line-height: 1.6;
-      margin: 8px 0;
-    }
-    .highlight-label {
-      font-weight: bold;
-      color: fuchsia;
-      display: inline-block;
-      margin-right: 6px;
-    }
-    .recommendation ul {
-      margin-top: 8px;
-      padding-left: 20px;
-    }
-  </style>
 </head>
 <body>
 
