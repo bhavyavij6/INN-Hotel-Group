@@ -36,8 +36,8 @@ The primary goal is to predict whether a hotel booking will be canceled, based o
 ---
 
 ## 🔍 Lead Business Questions & Insights
-
-
+<details>
+<summary>Click to view Questions</summary>
 ---
 
 ### Q1️. What is the average room price?
@@ -286,6 +286,8 @@ The primary goal is to predict whether a hotel booking will be canceled, based o
       <li>Notify staff to confirm bookings or follow up</li>
     </ul>
   </div>
+</details>
+
 </details>
 
 ---
