@@ -286,6 +286,19 @@ The primary goal is to predict whether a hotel booking will be canceled, based o
       <li>Notify staff to confirm bookings or follow up</li>
     </ul>
   </div>
+
+  <div class="recommendation">
+    <h2>6. 📈 Smart Overbooking Within Safe Margins <i><u>(Occupancy Optimization Strategy)</u></i></h2>
+    <p><span class="highlight-label">Insight:</span> On average, the hotel experiences a <strong>25% cancellation or no-show rate</strong>, leading to unused inventory and lost revenue.</p>
+    <p><span class="highlight-label">Recommendation:</span> Implement a <strong>controlled overbooking policy</strong> in the <strong>5–15% range</strong> to compensate for expected cancellations, while minimizing guest dissatisfaction.</p>
+    <ul>
+      <li>Base overbooking thresholds on seasonality, room type, and cancellation history</li>
+      <li>Apply only where guest experience will not be compromised</li>
+      <li>Set up contingency plans (e.g., rebooking in nearby partner hotels)</li>
+      <li>Use predictive models to avoid overbooking high-risk guests or segments</li>
+    </ul>
+  </div>
+
 </details>
 
 </details>
