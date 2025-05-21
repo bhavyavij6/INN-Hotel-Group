@@ -70,20 +70,22 @@ The primary goal is to predict whether a hotel booking will be canceled, based o
 | `avg_price_per_room`              | Average price per room for the booking |
 | `no_of_special_requests`          | Count of special room requests |
 | `booking_status`                  | Target variable – 1 if canceled, 0 if not |
-</details>
+
 ---
+</details>
+
 
 ## 🔍 Lead Business Questions & Insights
 
 ---
 
-### 1️⃣ What is the average room price?
+### 1️. What is the average room price?
 
 **💡 Answer:** The average room price is **€103.42**.
 
 ---
 
-### 2️⃣ How do cancellations vary by market segment type and by lead time?
+### 2️. How do cancellations vary by market segment type and by lead time?
 
 **💡 Answer:** 
 - Cancellations are highest for Online bookings and bookings with long lead times.  
@@ -111,7 +113,7 @@ The primary goal is to predict whether a hotel booking will be canceled, based o
 
 ---
 
-### 3️⃣ Build a logistic regression model to predict cancellations using 70% training data.
+### 3️. Build a logistic regression model to predict cancellations using 70% training data.
 
 **💡 Answer:** A Logistic Regression model was trained on 70% of the data. Here's the model summary:
 
@@ -140,9 +142,74 @@ The primary goal is to predict whether a hotel booking will be canceled, based o
   </tbody>
 </table>
 
+---
 </details>
 
+### 4. How do cancellations vary by market segment type and by lead time?
+
+**💡 Answer:** 
+- Here are the key drivers & their relationship with the booking cancellation status.  
+
+<details>
+<summary>Click to view full analysis</summary>
+
+#### 📊 Key Drivers - Coefficients & Relationship
+<div style="text-align: left; width: fit-content;">
+  <table style=" border-collapse: collapse; font-family: Arial, sans-serif; font-size: 13.5px;">
+    <thead>
+      <tr>
+        <th colspan="3" style="padding: 6px 12px; border: 1px solid #ccc;">Logistic Regression Coefficients — Key Drivers</th>
+      </tr>
+      <tr>
+        <th style="padding: 4px 10px; border: 1px solid #ccc;">Feature</th>
+        <th style="padding: 4px 10px; border: 1px solid #ccc;">Coeff</th>
+        <th style="padding: 4px 10px; border: 1px solid #ccc;">Impact</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td style="padding: 4px 10px; border: 1px solid #ccc;">no_of_special_requests</td>
+        <td style="padding: 4px 10px; border: 1px solid #ccc;">+1.18</td>
+        <td style="padding: 4px 10px; border: 1px solid #ccc;">Guests with custom requests show higher commitment</td>
+      </tr>
+      <tr>
+        <td style="padding: 4px 10px; border: 1px solid #ccc;">market_segment_type_Offline</td>
+        <td style="padding: 4px 10px; border: 1px solid #ccc;">+0.96</td>
+        <td style="padding: 4px 10px; border: 1px solid #ccc;">Offline bookings (via travel agents / phone calls / visit to front-desk) seldom cancel</td>
+      </tr>
+      <tr>
+        <td style="padding: 4px 10px; border: 1px solid #ccc;">repeated_guest</td>
+        <td style="padding: 4px 10px; border: 1px solid #ccc;">+0.29</td>
+        <td style="padding: 4px 10px; border: 1px solid #ccc;">Returning guests are more dependable</td>
+      </tr>
+      <tr>
+        <td style="padding: 4px 10px; border: 1px solid #ccc;">no_of_previous_bookings_not_canceled</td>
+        <td style="padding: 4px 10px; border: 1px solid #ccc;">+0.20</td>
+        <td style="padding: 4px 10px; border: 1px solid #ccc;">Guests with a solid history of non-cancellations are trusted bookers</td>
+      </tr>
+      <tr>
+        <td style="padding: 4px 10px; border: 1px solid #ccc;">lead_time</td>
+        <td style="padding: 4px 10px; border: 1px solid #ccc;">−1.34</td>
+        <td style="padding: 4px 10px; border: 1px solid #ccc;">Longer lead time increases cancellation risk — future plans change</td>
+      </tr>
+      <tr>
+        <td style="padding: 4px 10px; border: 1px solid #ccc;">avg_price_per_room</td>
+        <td style="padding: 4px 10px; border: 1px solid #ccc;">−0.64</td>
+        <td style="padding: 4px 10px; border: 1px solid #ccc;">Higher prices may discourage follow-through</td>
+      </tr>
+      <tr>
+        <td style="padding: 4px 10px; border: 1px solid #ccc;">no_of_weekend_nights</td>
+        <td style="padding: 4px 10px; border: 1px solid #ccc;">−0.12</td>
+        <td style="padding: 4px 10px; border: 1px solid #ccc;">Weekend plans are more flexible, hence more cancellations</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
 ---
+</details>
+
+
+
 
 
 
