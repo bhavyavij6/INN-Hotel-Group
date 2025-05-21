@@ -40,7 +40,7 @@ The primary goal is to predict whether a hotel booking will be canceled, based o
 - **Source:** Proprietary dataset from INN Hotels Group  
 - **File:** `INNHotelsGroup.csv`  
 - **Features:** 19 input features, 1 binary target (`booking_status`)  
-- **Granularity:** Booking-level records  
+- **Granularity:** Booking records  
 
 ---
 
@@ -71,4 +71,75 @@ The primary goal is to predict whether a hotel booking will be canceled, based o
 | `no_of_special_requests`          | Count of special room requests |
 | `booking_status`                  | Target variable – 1 if canceled, 0 if not |
 
+---
+
+## 🔍 Lead Business Questions & Insights
+
+---
+
+### 1️⃣ What is the average room price?
+
+**💡 Answer:** The average room price is **€103.42**.
+
+---
+
+### 2️⃣ How do cancellations vary by market segment type and by lead time?
+
+**💡 Answer:** 
+- Cancellations are highest for Online bookings and bookings with long lead times.  
+- Corporate and complementary segments are more reliable.
+
+<details>
+<summary>Click to view full analysis</summary>
+
+#### 📊 Market Segment vs. Cancellation Rate
+
+- **Online:** 36.5% cancellations
+- **Offline:** 30% cancellations
+- **Aviation:** 29.6% cancellations
+- **Corporate:** ~11% cancellations (most reliable)
+- **Complementary:** 0% cancellations (likely internal or comped)
+
+#### ⏱️ Lead Time vs. Cancellation Rate
+
+- **Longer lead time → higher cancellation rate**
+- Bookings with lead time >180 days show ~74% cancellation rate.
+- Lead time is positively correlated with cancellation likelihood.
+- Guests booking far in advance often cancel or change plans later.
+
 </details>
+
+---
+
+### 3️⃣ Build a logistic regression model to predict cancellations using 70% training data.
+
+**💡 Answer:** A Logistic Regression model was trained on 70% of the data. Here's the model summary:
+
+<details>
+<summary>Click to view full model details</summary>
+
+<table style="border-collapse: collapse; font-family: Arial, sans-serif; font-size: 13.5px;">
+  <thead>
+    <tr>
+      <th colspan="2" style="padding: 6px 12px; border: 1px solid #ccc;"> Model Summary — Logistic Regression</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="padding: 4px 10px; border: 1px solid #ccc;">Model Name</td>
+      <td style="padding: 4px 10px; border: 1px solid #ccc;">Logistic Regression</td>
+    </tr>
+    <tr>
+      <td style="padding: 4px 10px; border: 1px solid #ccc;">Training Set Shape</td>
+      <td style="padding: 4px 10px; border: 1px solid #ccc;">(25,293 × 21) — 70%</td>
+    </tr>
+    <tr>
+      <td style="padding: 4px 10px; border: 1px solid #ccc;">Testing Set Shape</td>
+      <td style="padding: 4px 10px; border: 1px solid #ccc;">(10,840 × 21) — 30%</td>
+    </tr>
+  </tbody>
+</table>
+
+</details>
+
+
