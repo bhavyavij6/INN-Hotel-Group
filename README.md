@@ -70,6 +70,7 @@ The primary goal is to predict whether a hotel booking will be canceled, based o
 | `avg_price_per_room`              | Average price per room for the booking |
 | `no_of_special_requests`          | Count of special room requests |
 | `booking_status`                  | Target variable – 1 if canceled, 0 if not |
+</details>
 ---
 
 ## 🔍 Lead Business Questions & Insights
@@ -140,5 +141,8 @@ The primary goal is to predict whether a hotel booking will be canceled, based o
 </table>
 
 </details>
+
+---
+
 
 
