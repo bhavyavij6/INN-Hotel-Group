@@ -44,7 +44,7 @@ The primary goal is to predict whether a hotel booking will be canceled, based o
 
 ---
 
-## 📘 Metadata Dictionary
+## Metadata Dictionary
 
 <details>
 <summary>Click to view column descriptions</summary>
@@ -75,7 +75,7 @@ The primary goal is to predict whether a hotel booking will be canceled, based o
 </details>
 
 
-## 🔍 Lead Business Questions & Insights
+## Lead Business Questions & Insights
 
 ---
 
@@ -256,11 +256,11 @@ The primary goal is to predict whether a hotel booking will be canceled, based o
 ### 6. What recommendations would you make to the management of the hotel as a data scientist based on your data analysis and predictive model (as related to cancellations)?
 
 💡 Answer: I as a Data Scientist would give the following Recommendations-:
-- 🎁 Incentivize Early Bookings to Reduce Cancellations (Lead-Time Trouble)
-- 👨‍👩‍👧 Boost Repeat Bookings with Family-Friendly Perks (Low Repeat Customer Problem)
-- ✈️ Strengthen Coordination with Travel & Aviation Partners (Market Segment Complication)
-- 📞 Leverage Offline Bookings to Strengthen Show-Up Rates (Offline Booking Muddle)
-- 🚦 Implement a Predictive Red-Flag System (Data-Science Solution)
+- Incentivize Early Bookings to Reduce Cancellations (Lead-Time Trouble)
+- Boost Repeat Bookings with Family-Friendly Perks (Low Repeat Customer Problem)
+- ✈Strengthen Coordination with Travel & Aviation Partners (Market Segment Complication)
+- Leverage Offline Bookings to Strengthen Show-Up Rates (Offline Booking Muddle)
+- Implement a Predictive Red-Flag System (Data-Science Solution)
 
 <details>
 <summary>Click to view full analysis</summary>
