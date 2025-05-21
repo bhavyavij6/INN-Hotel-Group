@@ -44,7 +44,7 @@ The primary goal is to predict whether a hotel booking will be canceled, based o
 
 ---
 
-## Metadata Dictionary
+## 📘 Metadata Dictionary
 
 <details>
 <summary>Click to view column descriptions</summary>
@@ -76,7 +76,7 @@ The primary goal is to predict whether a hotel booking will be canceled, based o
 
 
 ## Lead Business Questions & Insights
-
+<details>
 ---
 
 ### 1️. What is the average room price?
@@ -331,7 +331,7 @@ The primary goal is to predict whether a hotel booking will be canceled, based o
 
 </details>
 
-
+</details>
 
 
 
