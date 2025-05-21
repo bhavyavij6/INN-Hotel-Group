@@ -35,59 +35,18 @@ The primary goal is to predict whether a hotel booking will be canceled, based o
 
 ---
 
-## 📁 About the Dataset
-
-- **Source:** Proprietary dataset from INN Hotels Group  
-- **File:** `INNHotelsGroup.csv`  
-- **Features:** 19 input features, 1 binary target (`booking_status`)  
-- **Granularity:** Booking records  
-
----
-
-## 📘 Metadata Dictionary
-
-<details>
-<summary>Click to view column descriptions</summary>
-
-| Column Name                        | Description |
-|------------------------------------|-------------|
-| `Booking_ID`                       | Unique identifier of each booking |
-| `no_of_adults`                     | Number of adults included in the booking |
-| `no_of_children`                   | Number of children included in the booking |
-| `no_of_weekend_nights`            | Number of weekend nights (Saturday/Sunday) booked |
-| `no_of_week_nights`               | Number of weekday nights (Monday–Friday) booked |
-| `type_of_meal_plan`               | Type of meal plan selected (None, Meal Plan 1/2/3) |
-| `required_car_parking_space`      | Parking space required (1 = Yes, 0 = No) |
-| `room_type_reserved`              | Encoded room type reserved |
-| `lead_time`                       | Days between booking and arrival |
-| `arrival_year`                    | Year of arrival |
-| `arrival_month`                   | Month of arrival |
-| `arrival_date`                    | Day of the month for arrival |
-| `market_segment_type`             | Market segment type (e.g., Online, Offline, Corporate) |
-| `repeated_guest`                  | Whether the customer is a repeat guest (1 = Yes) |
-| `no_of_previous_cancellations`   | Count of past cancellations by the guest |
-| `no_of_previous_bookings_not_canceled` | Count of past completed bookings by the guest |
-| `avg_price_per_room`              | Average price per room for the booking |
-| `no_of_special_requests`          | Count of special room requests |
-| `booking_status`                  | Target variable – 1 if canceled, 0 if not |
-
----
-</details>
-
----
-
 ## 🔍 Lead Business Questions & Insights
-<details><summary>Check Out these Fun Inisghts</summary>
+
 
 ---
 
-### 1️. What is the average room price?
+### Q1️. What is the average room price?
 
 **💡 Answer:** The average room price is **€103.42**.
 
 ---
 
-### 2️. How do cancellations vary by market segment type and by lead time?
+### Q2️. How do cancellations vary by market segment type and by lead time?
 
 **💡 Answer:** 
 - Cancellations are highest for Online bookings and bookings with long lead times.  
@@ -115,7 +74,7 @@ The primary goal is to predict whether a hotel booking will be canceled, based o
 
 ---
 
-### 3️. Build a logistic regression model to predict cancellations using 70% training data.
+### Q3️. Build a logistic regression model to predict cancellations using 70% training data.
 
 **💡 Answer:** A Logistic Regression model was trained on 70% of the data. Here's the model summary:
 
@@ -149,7 +108,7 @@ The primary goal is to predict whether a hotel booking will be canceled, based o
 
 ---
 
-### 4. How do cancellations vary by market segment type and by lead time?
+### Q4. How do cancellations vary by market segment type and by lead time?
 
 **💡 Answer:** Here are the key drivers & their relationship with the booking cancellation status.  
 
@@ -213,7 +172,7 @@ The primary goal is to predict whether a hotel booking will be canceled, based o
 
 ---
 
-### 5. What is the model accuracy, precision, and recall?
+### Q5. What is the model accuracy, precision, and recall?
 
 <details>
 <summary>Click to view full analysis</summary>
@@ -255,7 +214,7 @@ The primary goal is to predict whether a hotel booking will be canceled, based o
 
 ---
 
-### 6. What recommendations would you make to the management of the hotel as a data scientist based on your data analysis and predictive model (as related to cancellations)?
+### Q6. What recommendations would you make to the management of the hotel as a data scientist based on your data analysis and predictive model (as related to cancellations)?
 
 💡 Answer: I as a Data Scientist would give the following Recommendations-:
 - Incentivize Early Bookings to Reduce Cancellations (Lead-Time Trouble)
@@ -327,6 +286,52 @@ The primary goal is to predict whether a hotel booking will be canceled, based o
       <li>Notify staff to confirm bookings or follow up</li>
     </ul>
   </div>
+</details>
+
+---
+
+## 📁 About the Dataset
+
+- **Source:** Proprietary dataset from INN Hotels Group  
+- **File:** [INNHotelsGroup.csv](INNHotelsGroup.csv) 
+- **Features:** 19 input features, 1 binary target (`booking_status`)  
+- **Granularity:** Booking records  
+
+---
+
+## 📘 Metadata Dictionary
+
+<details>
+<summary>Click to view column descriptions</summary>
+
+| Column Name                        | Description |
+|------------------------------------|-------------|
+| `Booking_ID`                       | Unique identifier of each booking |
+| `no_of_adults`                     | Number of adults included in the booking |
+| `no_of_children`                   | Number of children included in the booking |
+| `no_of_weekend_nights`            | Number of weekend nights (Saturday/Sunday) booked |
+| `no_of_week_nights`               | Number of weekday nights (Monday–Friday) booked |
+| `type_of_meal_plan`               | Type of meal plan selected (None, Meal Plan 1/2/3) |
+| `required_car_parking_space`      | Parking space required (1 = Yes, 0 = No) |
+| `room_type_reserved`              | Encoded room type reserved |
+| `lead_time`                       | Days between booking and arrival |
+| `arrival_year`                    | Year of arrival |
+| `arrival_month`                   | Month of arrival |
+| `arrival_date`                    | Day of the month for arrival |
+| `market_segment_type`             | Market segment type (e.g., Online, Offline, Corporate) |
+| `repeated_guest`                  | Whether the customer is a repeat guest (1 = Yes) |
+| `no_of_previous_cancellations`   | Count of past cancellations by the guest |
+| `no_of_previous_bookings_not_canceled` | Count of past completed bookings by the guest |
+| `avg_price_per_room`              | Average price per room for the booking |
+| `no_of_special_requests`          | Count of special room requests |
+| `booking_status`                  | Target variable – 1 if canceled, 0 if not |
+</details>
+
+---
+
+
+
+
 
 </body>
 </html>
