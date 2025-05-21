@@ -255,7 +255,7 @@ The primary goal is to predict whether a hotel booking will be canceled, based o
 
 ### 6. What recommendations would you make to the management of the hotel as a data scientist based on your data analysis and predictive model (as related to cancellations)?
 
-**💡 Answer: ** I as a Data Scientist would give the following Recommendations-:
+💡 Answer: I as a Data Scientist would give the following Recommendations-:
 - 🎁 Incentivize Early Bookings to Reduce Cancellations (Lead-Time Trouble)
 - 👨‍👩‍👧 Boost Repeat Bookings with Family-Friendly Perks (Low Repeat Customer Problem)
 - ✈️ Strengthen Coordination with Travel & Aviation Partners (Market Segment Complication)
