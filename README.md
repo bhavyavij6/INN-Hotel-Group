@@ -309,7 +309,7 @@ The primary goal is to predict whether a hotel booking will be canceled, based o
 
 - **Source:** Proprietary dataset from INN Hotels Group  
 - **File:** [INNHotelsGroup.csv](INNHotelsGroup.csv) 
-- **Features:** 19 input features, 1 binary target (`booking_status`)  
+- **Features:** 19 input features, where we have 1 binary target (`booking_status`)  
 - **Granularity:** Booking records  
 
 ---
