@@ -40,13 +40,13 @@ The primary goal is to predict whether a hotel booking will be canceled, based o
 <summary>Click to view Questions</summary>
 ---
 
-### Q1️. What is the average room price?
+### Q1. What is the average room price?
 
 **💡 Answer:** The average room price is **€103.42**.
 
 ---
 
-### Q2️. How do cancellations vary by market segment type and by lead time?
+### Q2. How do cancellations vary by market segment type and by lead time?
 
 **💡 Answer:** 
 - Cancellations are highest for Online bookings and bookings with long lead times.  
@@ -74,7 +74,7 @@ The primary goal is to predict whether a hotel booking will be canceled, based o
 
 ---
 
-### Q3️. Build a logistic regression model to predict cancellations using 70% training data.
+### Q3. Build a logistic regression model to predict cancellations using 70% training data.
 
 **💡 Answer:** A Logistic Regression model was trained on 70% of the data. Here's the model summary:
 
